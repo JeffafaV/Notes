@@ -49,10 +49,11 @@ class Str
 	string + string = concatenated string
 	
 	We can overload the + operator so that it can be used for more data types. However, 
-	we cannot set a new meaning to an operator for built in types. This means that the 
-	examples above can't be modified. We are only able to perform operator overloading 
-	on user defined types such as classes. The Str class overloads the + operator so that 
-	it can be used on two Str data types.
+	we cannot change the existing function of an operator for built in types. This means 
+	that the examples above can't be modified. We are only able to perform operator 
+	overloading on user defined types (such as classes) or a mixture of user defined types 
+	and built in types. The Str class overloads the + operator so that it can be used on 
+	two Str data types.
 	
 	Ex.
 	class object + class object = whatever you want
