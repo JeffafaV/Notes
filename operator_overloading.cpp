@@ -67,7 +67,8 @@ int main()
 	
 	// concatenate a and b's string and set it to c's string
 	Str c = a + b;
-	// equivalent to the line of code above and helps in understanding what is going on
+	// equivalent to the line of code above but it helps us understand what is going on 
+	// since we can see it being used as a regular member function
 	Str d = a.operator+(b);
 	
 	// print values
