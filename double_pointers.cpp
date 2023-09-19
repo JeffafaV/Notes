@@ -60,11 +60,37 @@ int main()
 	// these will print the value that is stored in the 
 	// address that the pointers are referencing/set to.
 	// getting the value of a memory address is also known as dereferencing
-	cout << *ip << endl;
-	cout << *ipp << endl;
+	cout << *ip << endl; // prints the value of i which is 5
+	cout << *ipp << endl; // prints the value of ip which is i's memory address
 	cout << endl;
 	
-	// print memory addresses
+	cout << "Printing the memory address of each variable:" << endl;
+	
+	// these will print the memory address that each variable is stored at
+	// you will notice some of these addresses printed above
+	cout << &i << endl; // print the address of i
+	cout << &ip << endl; // print the address of ip
+	cout << &ipp << endl; // print the address of ipp
+	cout << endl;
+	
+	/*
+		it's a good idea to view these pointers and the memory addresses they store as links
+		
+		Ex.
+		ipp = x008 ------> ip = x004 ------> i = 5
+		   x012              x008             x004
+		
+		The above shows that it possible to reach the value of i with ipp by dereferencing 
+		twice. When we dereference ipp once we will get the value of ip which is x004. When we 
+		dereference one more time we will get the value of i which is 5.
+	*/
+	
+	cout << "Printing each variable value with only one pointer:" << endl;
+	
+	// printing the value of each variable by only using ipp
+	cout << ipp << endl; // print the value of ipp
+	cout << *ipp << endl; // print the value of ip (dereferencing once)
+	cout << **ipp << endl; // print the value of i (dereferencing twice)
 	
 	return 0;
 }
