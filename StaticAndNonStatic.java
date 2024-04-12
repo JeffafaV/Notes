@@ -28,6 +28,8 @@ class ThirdOuterClass {
 // https://www.geeksforgeeks.org/nested-classes-java/
 // https://stackoverflow.com/questions/70324/java-inner-class-and-static-nested-class
 // https://www.geeksforgeeks.org/difference-between-static-and-non-static-method-in-java/
+// The purpose of this program is to understand the syntax of calling methods of 
+// static nested classes and inner classes
 public class StaticAndNonStaticClasses
 {
     void displayNonStaticMethod() {
